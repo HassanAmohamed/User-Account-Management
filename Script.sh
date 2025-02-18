@@ -20,7 +20,7 @@ fi
 # Read the CSV file line by line
 while IFS=, read -r username full_name
 do
-        # Generate a random password using openssl
+        # Generate a random password using openssl tool
         password=$(openssl rand -base64 12)
 
         # Create a new user with the specified username and full name
@@ -43,4 +43,4 @@ do
 done < "$CSV_FILE"
 
 # Final message indicating completion
-echo "User creation completed successfully!"
+echo "Hello $username Your account creation completed successfully!"
