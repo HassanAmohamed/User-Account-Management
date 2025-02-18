@@ -20,7 +20,7 @@ fi
 # Read the CSV file line by line
 while IFS=, read -r username full_name
 do
-        # Generate a random password using openssl tool
+        # Generate a random password using openssl 
         password=$(openssl rand -base64 12)
 
         # Create a new user with the specified username and full name
